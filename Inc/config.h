@@ -19,7 +19,7 @@
   //#define VARIANT_HOVERCAR    // Variant for HOVERCAR build
   //#define VARIANT_HOVERBOARD  // Variant for HOVERBOARD build
   //#define VARIANT_TRANSPOTTER // Variant for TRANSPOTTER build https://github.com/NiklasFauth/hoverboard-firmware-hack/wiki/Build-Instruction:-TranspOtter https://hackaday.io/project/161891-transpotter-ng
-  //#define VARIANT_SKATEBOARD  // Variant for SKATEBOARD build
+  //#define VARIANT_SKATEBOARD  // Variant for w build
 #endif
 // ########################### END OF VARIANT SELECTION ############################
 
@@ -144,7 +144,7 @@
 
 // Enable/Disable Motor
 #define MOTOR_LEFT_ENA                  // [-] Enable LEFT motor.  Comment-out if this motor is not needed to be operational
-//#define MOTOR_RIGHT_ENA                 // [-] Enable RIGHT motor. Comment-out if this motor is not needed to be operational
+#define MOTOR_RIGHT_ENA                 // [-] Enable RIGHT motor. Comment-out if this motor is not needed to be operational
 
 // Control selections
 #define CTRL_TYP_SEL    FOC_CTRL        // [-] Control type selection: COM_CTRL, SIN_CTRL, FOC_CTRL (default)
@@ -174,8 +174,8 @@
 
 // ############################## DEFAULT SETTINGS ############################
 // Default settings will be applied at the end of this config file if not set before
-#define INACTIVITY_TIMEOUT        15       // Minutes of not driving until poweroff. it is not very precise.
-#define BEEPS_BACKWARD            1       // 0 or 1
+#define INACTIVITY_TIMEOUT        30       // Minutes of not driving until poweroff. it is not very precise.
+#define BEEPS_BACKWARD            0       // 0 or 1
 #define ADC_MARGIN                100     // ADC input margin applied on the raw ADC min and max to make sure the MIN and MAX values are reached even in the presence of noise
 #define ADC_PROTECT_TIMEOUT       100     // ADC Protection: number of wrong / missing input commands before safety state is taken
 #define ADC_PROTECT_THRESH        200     // ADC Protection threshold below/above the MIN/MAX ADC values
